@@ -1,5 +1,38 @@
 <h1>Product Lists</h1>
 <hr />
+
+<div class="row">
+  @for(product of products; track product){
+  <div class="col-sm-3 mt-2 mb-2">
+    <div class="card" style="width: 18rem">
+      <img
+        class="card-img-top"
+        src="{{ product.thumbnail }}"
+        alt="Card image cap"
+      />
+      <div class="card-body">
+        <h5 class="card-title">{{ product.title }}</h5>
+        <p class="card-text">{{ product.description }}</p>
+        <p class="card-text">
+          <b>Brand: </b>{{ product.brand }} <br />
+          <b>Category: </b>{{ product.category }} <br />
+          <b>Rating: </b>{{ product.rating }} <br />
+          <b>Discount: </b>{{ product.discountPercentage }} <br />
+          <b>Stock: </b>{{ product.stock }} <br />
+          <b>Price: </b>${{ product.price }} <br />
+        </p>
+
+        <a href="#" class="btn btn-primary">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+  }
+</div>
+
+<hr />
+<hr />
+
 <table class="table table-border table-hover">
   <caption></caption>
   <thead>

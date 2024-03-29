@@ -14,6 +14,8 @@ import { MultitabDemoComponent } from './multitab-demo/multitab-demo.component';
 import { MyCustomDirectiveDirective } from './my-custom-directive.directive';
 import { FormsModule } from '@angular/forms';
 import { DataBindingComponent } from './data-binding/data-binding.component';
+import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { EmployeCountComponent } from './employe-count/employe-count.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
     MultitabDemoComponent,
     MyCustomDirectiveDirective,
     DataBindingComponent,
+    EmployeeListComponent,
+    EmployeCountComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

@@ -39,4 +39,9 @@ export class DataBindingComponent {
     this.text = event.target.value;
     // console.log(this.text);
   }
+
+  countrySelected: string = 'You have not selected any country.';
+  selectCountry(event: any) {
+    this.countrySelected = event.target.value;
+  }
 }

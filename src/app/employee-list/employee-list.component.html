@@ -1,0 +1,30 @@
+<div>
+  <app-employe-count
+    [total]="totalCount()"
+    [male]="maleCount()"
+    [female]="femaleCount()"
+  ></app-employe-count>
+  <h1>Employee List:</h1>
+  <table class="table table-bordered">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Gender</th>
+      <th>Salary</th>
+    </tr>
+    <tr *ngFor="let employee of employees">
+      <td>{{ employee.id }}</td>
+      <td>{{ employee.name }}</td>
+      <td>{{ employee.gender }}</td>
+      <td>{{ employee.salary }}</td>
+    </tr>
+    <tr>
+      <td *ngIf="!employees || employees.length == 0" colspan="4">
+        No Record Found
+      </td>
+    </tr>
+  </table>
+</div>
+<div>
+  <!-- <button></button> -->
+</div>

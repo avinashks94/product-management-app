@@ -7,6 +7,7 @@ import { IfDemoComponent } from './if-demo/if-demo.component';
 import { MultitabDemoComponent } from './multitab-demo/multitab-demo.component';
 import { MultiformDemoComponent } from './multiform-demo/multiform-demo.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
+import { EmployeeListComponent } from './employee-list/employee-list.component';
 
 const routes: Routes = [
   {
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path: 'data-binding',
     component: DataBindingComponent,
+  },
+  {
+    path: 'employees',
+    component: EmployeeListComponent,
   },
   {
     path: '**',
