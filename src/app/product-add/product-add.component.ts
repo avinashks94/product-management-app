@@ -18,6 +18,7 @@ export class ProductAddComponent {
     brand: '',
     category: '',
     thumbnail: '',
+
     images: [],
   };
   addProduct() {
