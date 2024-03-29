@@ -1,0 +1,14 @@
+.italic {
+  font-style: italic;
+  color: orange;
+  font-size: 3.4rem;
+}
+
+.bold {
+  font-weight: bold;
+  color: blue;
+}
+
+.show {
+  display: none;
+}

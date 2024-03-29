@@ -1,0 +1,54 @@
+<div class="col-8">
+  <div class="mb-3">
+    <label for="">Enter product ID:</label>
+    <input type="text" [(ngModel)]="product.id" class="form-control" />
+  </div>
+  <div class="mb-3">
+    <label for="">Enter product title:</label>
+    <input type="text" [(ngModel)]="product.title" class="form-control" />
+  </div>
+  <div class="mb-3">
+    <label for="">Enter product description:</label>
+    <input type="text" [(ngModel)]="product.description" class="form-control" />
+  </div>
+  <div class="mb-3">
+    <label for="">Enter product price:</label>
+    <input type="text" [(ngModel)]="product.price" class="form-control" />
+  </div>
+  <div class="mb-3">
+    <label for="">Enter product discrount:</label>
+    <input
+      type="text"
+      [(ngModel)]="product.discountPercentage"
+      class="form-control"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="">Enter product rating:</label>
+    <input type="text" [(ngModel)]="product.rating" class="form-control" />
+  </div>
+  <div class="mb-3">
+    <label for="">Enter product stock:</label>
+    <input type="text" [(ngModel)]="product.stock" class="form-control" />
+  </div>
+  <div class="mb-3">
+    <label for="">Enter product brand:</label>
+    <input type="text" [(ngModel)]="product.brand" class="form-control" />
+  </div>
+  <div class="mb-3">
+    <label for="">Enter product category:</label>
+    <input type="text" [(ngModel)]="product.category" class="form-control" />
+  </div>
+  <div class="mb-3">
+    <label for="">Enter product thumbnail:</label>
+    <input type="text" [(ngModel)]="product.thumbnail" class="form-control" />
+  </div>
+  <div class="mb-3">
+    <input
+      type="button"
+      (click)="addProduct()"
+      value="Submit"
+      class="btn btn-success"
+    />
+  </div>
+</div>

@@ -1,0 +1,46 @@
+<!-- <div [ariaDisabled]="">
+
+</div> -->
+<!-- <button (click)="validate()">Toggle</button> -->
+<hr />
+<div>
+  <input
+    type="radio"
+    value="Valid"
+    (click)="validate('valid')"
+    name="rbtValid"
+  />Valid
+  <input
+    type="radio"
+    value="Invalid"
+    (click)="validate('invalid')"
+    name="rbtValid"
+  />Invalid
+</div>
+
+<p *ngIf="isValid; then block1; else block2">Check</p>
+
+<!-- <div *ngIf="isValid; else elseBlock">
+  <h1>This is Valid</h1>
+</div> -->
+
+<ng-template #block1>
+  <div *ngIf="isValid">
+    <h1>This is Valid</h1>
+  </div>
+</ng-template>
+<ng-template #block2>
+  <div *ngIf="!isValid">
+    <h1>This is not Valid</h1>
+  </div>
+</ng-template>
+
+<h1>NgFor Demo</h1>
+<h5>Book List:</h5>
+<ol>
+  <li *ngFor="let book of books">{{ book }}</li>
+</ol>
+
+<div appMyCustomDirective>
+  <h1>My custom directive</h1>
+</div>
