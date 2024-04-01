@@ -26,4 +26,14 @@ export class EmployeeListComponent {
   femaleCount() {
     return this.employees.filter((emp) => emp.gender == 'Female').length;
   }
+  counter = 5;
+  increment() {
+    //
+    this.counter++;
+  }
+
+  decrement() {
+    //
+    this.counter--;
+  }
 }

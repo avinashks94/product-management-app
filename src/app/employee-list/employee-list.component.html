@@ -1,8 +1,11 @@
 <div>
+  <button (click)="increment()">Incremet</button>
+  <button (click)="decrement()">Decremet</button>
   <app-employe-count
     [total]="totalCount()"
     [male]="maleCount()"
     [female]="femaleCount()"
+    [count]="counter"
   ></app-employe-count>
   <h1>Employee List:</h1>
   <table class="table table-bordered">
@@ -25,6 +28,4 @@
     </tr>
   </table>
 </div>
-<div>
-  <!-- <button></button> -->
-</div>
+<div></div>
