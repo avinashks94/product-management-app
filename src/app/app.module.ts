@@ -16,6 +16,9 @@ import { FormsModule } from '@angular/forms';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { EmployeCountComponent } from './employe-count/employe-count.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { UserListComponent } from './user-list/user-list.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +35,9 @@ import { EmployeCountComponent } from './employe-count/employe-count.component';
     DataBindingComponent,
     EmployeeListComponent,
     EmployeCountComponent,
+    ParentComponent,
+    ChildComponent,
+    UserListComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

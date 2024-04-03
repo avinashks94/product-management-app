@@ -1,14 +1,30 @@
 <div>
   <h4>
-    <span><input type="radio" value="all" name="count" />All({{ all }})</span>
     <span
-      ><input type="radio" value="male" name="count" />Male({{ male }})</span
+      ><input
+        type="radio"
+        value="all"
+        name="count"
+        (click)="displayAll()"
+      />All({{ all }})
+    </span>
+    <span
+      ><input
+        type="radio"
+        value="male"
+        name="count"
+        (click)="displayMale()"
+      />Male({{ male }})</span
     >
     <span
-      ><input type="radio" value="female" name="count" />Female({{
-        female
-      }})</span
+      ><input
+        type="radio"
+        value="female"
+        name="count"
+        (click)="displayFemale()"
+      />Female({{ female }})</span
     >
   </h4>
+
   <h1>Inside child Count={{ count }}</h1>
 </div>

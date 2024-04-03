@@ -6,7 +6,9 @@
     [male]="maleCount()"
     [female]="femaleCount()"
     [count]="counter"
+    (filteredEmployees)="receiveFilteredEmployees($event)"
   ></app-employe-count>
+
   <h1>Employee List:</h1>
   <table class="table table-bordered">
     <tr>
@@ -15,7 +17,7 @@
       <th>Gender</th>
       <th>Salary</th>
     </tr>
-    <tr *ngFor="let employee of employees">
+    <tr *ngFor="let employee of newData">
       <td>{{ employee.id }}</td>
       <td>{{ employee.name }}</td>
       <td>{{ employee.gender }}</td>

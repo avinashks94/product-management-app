@@ -1,0 +1,7 @@
+<h1>Welcome to {{ title }}</h1>
+<p>parent component counter value={{ counter }}</p>
+
+<app-child
+  [count]="counter"
+  (countChanged)="countChangedHandler($event)"
+></app-child>

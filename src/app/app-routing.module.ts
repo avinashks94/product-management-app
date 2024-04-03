@@ -8,6 +8,9 @@ import { MultitabDemoComponent } from './multitab-demo/multitab-demo.component';
 import { MultiformDemoComponent } from './multiform-demo/multiform-demo.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { UserListComponent } from './user-list/user-list.component';
 
 const routes: Routes = [
   {
@@ -41,6 +44,18 @@ const routes: Routes = [
   {
     path: 'employees',
     component: EmployeeListComponent,
+  },
+  {
+    path: 'parent-com',
+    component: ParentComponent,
+  },
+  {
+    path: 'child-com',
+    component: ChildComponent,
+  },
+  {
+    path: 'users',
+    component: UserListComponent,
   },
   {
     path: '**',
